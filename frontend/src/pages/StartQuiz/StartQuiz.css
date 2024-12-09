@@ -1,0 +1,73 @@
+/* Styling for the Start Quiz Page */
+.start-quiz-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 66px);
+  background: linear-gradient(135deg, #4a90e2, #6a11cb);
+  padding: 2rem;
+}
+
+.quiz-card {
+  background: #ffffff;
+  padding: 2rem;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.quiz-card:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.quiz-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.quiz-details {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.detail-icon {
+  margin-right: 0.5rem;
+  color: #4a90e2;
+}
+
+.start-quiz-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0px 4px 10px rgba(74, 144, 226, 0.4);
+}
+
+.start-quiz-button:hover {
+  background-color: #357abd;
+  transform: translateY(-3px);
+}
