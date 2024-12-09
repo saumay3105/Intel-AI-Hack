@@ -10,7 +10,7 @@ def extract_text_from_document(doc_path: str):
 
 
 def generate_quiz_questions(file_path: str = None, text: str = None) -> str:
-    GEMINI_API_KEY = 'AIzaSyBYKJmcss0_ESlLD0i3veYFmv9YhjXsaQc'
+    GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel("gemini-1.5-flash")
     llm_prompt = """You are provided with the following text:
